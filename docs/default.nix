@@ -142,6 +142,10 @@ in
         version = ../lib/network/version;
         dependencies = {inherit (dependency) "NM-1.0";}; # FIXME: why does this not work?
       }}
+      ${genLib "niri" "Niri" {
+        description = "IPC client for niri";
+        version = ../lib/niri/version;
+      }}
       ${genLib "notifd" "Notifd" {
         description = "Notification daemon library";
         version = ../lib/notifd/version;
